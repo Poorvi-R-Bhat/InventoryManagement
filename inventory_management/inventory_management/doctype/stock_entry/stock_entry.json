@@ -37,6 +37,8 @@
   {
    "fieldname": "stock_entry_type",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Stock Entry Type",
    "options": "\nReceive\nTransfer\nIssue"
   },
@@ -80,7 +82,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-08 14:11:05.894781",
+ "modified": "2024-05-20 13:36:08.836766",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Stock Entry",

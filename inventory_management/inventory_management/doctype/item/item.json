@@ -12,7 +12,8 @@
   "cb1_column",
   "item_price",
   "item_stock",
-  "item_group"
+  "item_group",
+  "moving_average_rate"
  ],
  "fields": [
   {
@@ -52,11 +53,16 @@
    "fieldtype": "Link",
    "label": "Item Group",
    "options": "Item Group"
+  },
+  {
+   "fieldname": "moving_average_rate",
+   "fieldtype": "Float",
+   "label": "Moving Average Rate"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 11:35:36.418294",
+ "modified": "2024-05-28 15:06:27.304774",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Item",

@@ -11,7 +11,7 @@
   "voucher_number",
   "quantity",
   "posting_date",
-  "item_price1"
+  "rate"
  ],
  "fields": [
   {
@@ -46,14 +46,14 @@
    "label": "Quantity"
   },
   {
-   "fieldname": "item_price1",
-   "fieldtype": "Currency",
-   "label": "Item Price"
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 14:18:49.252399",
+ "modified": "2024-05-28 15:34:50.595444",
  "modified_by": "Administrator",
  "module": "Inventory Management",
  "name": "Stock Ledger Entry",
