@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Inventory Management
 
 Test
@@ -5,3 +6,6 @@ Test
 #### License
 
 mit
+=======
+# InventoryManagement
+>>>>>>> origin/main
