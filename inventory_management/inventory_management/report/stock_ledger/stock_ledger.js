@@ -44,7 +44,7 @@ frappe.query_reports["Stock Ledger"] = {
 
     "formatter": function(value, row, column, data, default_formatter) {
         value = default_formatter(value, row, column, data);
-        
+
         if (column.fieldname === "quantity" && data) {
             if (data.quantity < 0) {
                 value = "<span style='color:red'>" + value + "</span>";

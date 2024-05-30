@@ -37,8 +37,6 @@ frappe.query_reports["Stock Balance"] = {
     "formatter": function(value, row, column, data, default_formatter) {
         value = default_formatter(value, row, column, data);
 
-        console.log('Value:', value, 'Row:', row, 'Column:', column, 'Data:', data); 
-
         if (column.fieldname === "out_qty" && data && data.out_qty > 0) {
             value = "<span style='color:red'>" + value + "</span>";
         } else if (column.fieldname === "in_qty" && data && data.in_qty > 0) {
