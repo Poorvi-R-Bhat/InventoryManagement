@@ -10,13 +10,13 @@ def execute(filters: Dict[str, Any] = None) -> List[Dict[str, Any]]:
 
 def get_columns():
     return [
+        {"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 100},
         {"label": _("Item Code"), "fieldname": "item_code", "fieldtype": "Link", "options": "Item", "width": 100},
         {"label": _("Warehouse"), "fieldname": "warehouse", "fieldtype": "Link", "options": "Warehouse", "width": 100},
         {"label": _("Quantity"), "fieldname": "quantity", "fieldtype": "Float", "width": 100},
         {"label": _("Rate"), "fieldname": "rate", "fieldtype": "Currency", "width": 100},
         {"label": _("Balance Qty"), "fieldname": "balance_qty", "fieldtype": "Float", "width": 100},
         {"label": _("Voucher Number"), "fieldname": "voucher_number", "fieldtype": "Link", "options": "Stock Entry", "width": 100},
-        {"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 100},
         {"label": _("In Qty"), "fieldname": "in_qty", "fieldtype": "Float", "width": 100},
         {"label": _("Out Qty"), "fieldname": "out_qty", "fieldtype": "Float", "width": 100},
         {"label": _("Avg Rate"), "fieldname": "avg_rate", "fieldtype": "Currency", "width": 100},
@@ -40,13 +40,13 @@ def get_data(filters: Dict[str, Any]) -> List[Dict[str, Any]]:
         valuation_rate = flt(entry.get("rate"))
 
         data.append({
+            "posting_date": entry.get("posting_date"),
             "item_code": entry.get("item_code"),
             "warehouse": entry.get("warehouse"),
             "quantity": entry.get("quantity"),
             "rate": entry.get("rate"),
             "balance_qty": balance_qty[key],
             "voucher_number": entry.get("voucher_number"),
-            "posting_date": entry.get("posting_date"),
             "in_qty": in_qty,
             "out_qty": out_qty,
             "avg_rate": avg_rate,
